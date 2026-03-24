@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Garima Shrestha</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress-bar"></div>
+  </div>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">Garima Shrestha</a>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+      <li><a href="fittrack.html">FitTrack</a></li>
+      <li><a href="inventory.html">Inventory App</a></li>
+    </ul>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-wrapper">
+    <main id="main-content">
+
+      <!-- Page Hero -->
+      <header class="page-hero">
+        <span class="page-hero-sub fade-up d1">Selected work</span>
+        <h1 class="fade-up d2">My Projects</h1>
+        <p class="fade-up d3">
+          UX case studies spanning AI-powered fitness tracking and
+          restaurant inventory management &mdash; from research to high-fidelity prototype.
+        </p>
+      </header>
+
+      <!-- Projects -->
+      <section aria-label="Project case studies" class="projects-wrap">
+
+        <!-- Project 1: FitTrack -->
+        <article class="project-card" data-reveal aria-labelledby="proj1-title">
+          <div class="proj-img">
+            <img src="images/ft.jpg" alt="FitTrack mobile app screens showing workout tracking and nutrition dashboard">
+            <!-- Overlay is decorative; link in proj-info is the interactive element -->
+            <div class="proj-img-overlay" aria-hidden="true">
+              <span>View Case Study</span>
+            </div>
+          </div>
+          <div class="proj-info">
+            <span class="proj-num" aria-label="Project one">Project 01</span>
+            <h2 id="proj1-title">FitTrack<br>Mobile App</h2>
+            <p>
+              An AI-powered all-in-one fitness companion for tracking workouts,
+              protein intake, and weight progress. Designed to replace fragmented
+              apps with a single, personalized coaching experience.
+            </p>
+            <ul class="proj-tags" role="list" aria-label="Technologies and methods used">
+              <li class="proj-tag">UX Research</li>
+              <li class="proj-tag">Figma</li>
+              <li class="proj-tag">AI Integration</li>
+              <li class="proj-tag">Mobile</li>
+            </ul>
+            <a href="fittrack.html" class="btn" aria-label="View FitTrack case study">View Case Study &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Project 2: Inventory App -->
+        <article class="project-card reverse" data-reveal data-delay="150" aria-labelledby="proj2-title">
+          <div class="proj-img">
+            <img src="images/Inv.jpg" alt="Restaurant inventory app screens showing item list and barcode scanner interface">
+            <div class="proj-img-overlay" aria-hidden="true">
+              <span>View Case Study</span>
+            </div>
+          </div>
+          <div class="proj-info">
+            <span class="proj-num" aria-label="Project two">Project 02</span>
+            <h2 id="proj2-title">Restaurant<br>Inventory App</h2>
+            <p>
+              A streamlined inventory management solution for restaurant managers.
+              Reduces human error, enables barcode scanning, and keeps multi-location
+              operations running without shortages.
+            </p>
+            <ul class="proj-tags" role="list" aria-label="Technologies and methods used">
+              <li class="proj-tag">UX Research</li>
+              <li class="proj-tag">Figma</li>
+              <li class="proj-tag">Usability Testing</li>
+              <li class="proj-tag">Mobile</li>
+            </ul>
+            <a href="inventory.html" class="btn" aria-label="View Restaurant Inventory App case study">View Case Study &rarr;</a>
+          </div>
+        </article>
+
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <span class="footer-logo" aria-hidden="true">Garima Shrestha</span>
+      <p class="footer-copy"><small>&copy; 2026 Garima Shrestha. All rights reserved.</small></p>
+      <a href="about.html" class="footer-link">About Me</a>
+    </footer>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

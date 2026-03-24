@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory App Case Study — Garima Shrestha</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress-bar"></div>
+  </div>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">Garima Shrestha</a>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="fittrack.html">FitTrack</a></li>
+      <li><a href="inventory.html" aria-current="page">Inventory App</a></li>
+    </ul>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-wrapper">
+    <main id="main-content">
+
+      <!-- Case Hero -->
+      <header class="case-hero">
+        <div class="case-hero-text">
+          <span class="case-project-label fade-up d1">Project 02 &mdash; Mobile App</span>
+          <h1 class="fade-up d2">Restaurant<br>Inventory App</h1>
+          <p class="case-hero-desc fade-up d3">
+            A streamlined inventory management solution that eliminates human error,
+            automates ordering, and keeps restaurant operations running without shortages.
+          </p>
+        </div>
+
+        <aside class="case-meta-box fade-up d4" aria-label="Project details">
+          <dl>
+            <div class="meta-item">
+              <dt class="meta-label">Duration</dt>
+              <dd class="meta-value">Sep 2024 &ndash; Mar 2025</dd>
+            </div>
+            <div class="meta-item">
+              <dt class="meta-label">Role</dt>
+              <dd class="meta-value">Lead UX Designer &amp; Researcher</dd>
+            </div>
+            <div class="meta-item">
+              <dt class="meta-label">Platform</dt>
+              <dd class="meta-value">Mobile</dd>
+            </div>
+            <div class="meta-item">
+              <dt class="meta-label">Tools</dt>
+              <dd class="meta-value">Figma, Adobe Illustrator</dd>
+            </div>
+          </dl>
+        </aside>
+      </header>
+
+      <!-- Feature Image -->
+      <div class="case-feature-img" data-reveal>
+        <figure>
+          <img src="images/Inv.jpg" alt="Restaurant inventory app screens showing the homepage with item categories, search bar, and stock levels">
+          <figcaption>Inventory App &mdash; Created by Garima in Figma</figcaption>
+        </figure>
+      </div>
+
+      <!-- Case Body -->
+      <div class="case-body">
+
+        <!-- 01 Overview -->
+        <section class="case-section" data-section-num="01" data-reveal aria-labelledby="cs1-heading">
+          <div class="case-section-hd">
+            <span class="cs-num" aria-hidden="true">01</span>
+            <h2 id="cs1-heading">Project Overview</h2>
+          </div>
+          <p>
+            This innovative app addresses the challenges workers face in efficiently
+            ordering and organizing inventory. It simplifies everyday inventory tasks &mdash;
+            from addition to deduction to procurement &mdash; for seamless business operations.
+          </p>
+          <div class="pain-cards" role="list">
+            <div class="pain-card" role="listitem">
+              <h3>The Problem</h3>
+              <p>Recurrent inventory shortages and oversight in placing timely orders
+              burden managers with frequent trips for minor essentials, disrupting
+              restaurant operations.</p>
+            </div>
+            <div class="pain-card" role="listitem">
+              <h3>The Goal</h3>
+              <p>Bridge existing gaps and facilitate a continuous flow of inventory
+              within the restaurant, ensuring perpetual stock availability without
+              encountering shortages.</p>
+            </div>
+            <div class="pain-card" role="listitem">
+              <h3>Responsibilities</h3>
+              <p>Paper &amp; digital wireframing, hi-fi and lo-fi prototyping,
+              user interviews, usability studies, and accessibility-informed
+              design iterations.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 02 Understanding the User -->
+        <section class="case-section" data-section-num="02" data-reveal aria-labelledby="cs2-heading">
+          <div class="case-section-hd">
+            <span class="cs-num" aria-hidden="true">02</span>
+            <h2 id="cs2-heading">Understanding the User</h2>
+          </div>
+          <p>
+            User research focused on people who deal with daily inventory tasks &mdash;
+            primarily managers and owners of restaurants. Interviews revealed their
+            pain points and helped determine whether the inventory process could be
+            fully automated through the app.
+          </p>
+
+          <h3>Pain Points</h3>
+          <div class="pain-cards" role="list">
+            <div class="pain-card" role="listitem">
+              <h4>Time</h4>
+              <p>Counting and ordering inventory is very time-consuming and tedious
+              work that pulls managers away from other responsibilities.</p>
+            </div>
+            <div class="pain-card" role="listitem">
+              <h4>Human Error</h4>
+              <p>People miss items, forget to count, or forget to order &mdash; impacting
+              the restaurant and hindering smooth operations.</p>
+            </div>
+            <div class="pain-card" role="listitem">
+              <h4>Not Inclusive</h4>
+              <p>Existing apps are mainly focused on warehouses and large numbers,
+              not helpful for small-scale restaurant inventory needs.</p>
+            </div>
+          </div>
+
+          <h3>User Personas</h3>
+
+          <article class="persona-card" aria-labelledby="persona1-name">
+            <h4 id="persona1-name" class="persona-name">Sugam Pokhrel</h4>
+            <span class="persona-role">Restaurant Manager</span>
+            <p><strong>Problem Statement:</strong> Sugam is a restaurant manager who needs to
+            efficiently manage inventory because if he does not, the restaurant might not
+            run smoothly.</p>
+            <div class="persona-grid">
+              <div>
+                <h5 class="label-sm" style="margin-bottom:10px">Goals</h5>
+                <ul>
+                  <li>Manage restaurant inventory more efficiently</li>
+                  <li>Track ins and outs of inventory easily with less hassle</li>
+                </ul>
+              </div>
+              <div>
+                <h5 class="label-sm" style="margin-bottom:10px">Frustrations</h5>
+                <ul>
+                  <li>&ldquo;Most of the time, I have trouble getting in all the inventory at once because we are humans and we forget sometimes.&rdquo;</li>
+                  <li>&ldquo;My employees may not coordinate with each other and overorder or underorder.&rdquo;</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="persona-card" aria-labelledby="persona2-name">
+            <h4 id="persona2-name" class="persona-name">Sandra Smith</h4>
+            <span class="persona-role">Senior Manager (Multi-location)</span>
+            <p><strong>Problem Statement:</strong> Sandra is a senior manager who needs to get
+            items to all the restaurants because if not, she has to express ship, which is
+            expensive and hectic.</p>
+            <div class="persona-grid">
+              <div>
+                <h5 class="label-sm" style="margin-bottom:10px">Goals</h5>
+                <ul>
+                  <li>Coordinate with all branches for smooth operations</li>
+                  <li>Keep track of all restaurants&rsquo; invoices and expenses</li>
+                  <li>Lay out a system feasible for all employees to efficiently order inventory</li>
+                </ul>
+              </div>
+              <div>
+                <h5 class="label-sm" style="margin-bottom:10px">Frustrations</h5>
+                <ul>
+                  <li>&ldquo;I have a hard time coordinating with all the restaurants to order inventory regulated by the corporation.&rdquo;</li>
+                  <li>&ldquo;Miscommunications lead to shortage of some items and that is hectic.&rdquo;</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- 03 User Journey Maps -->
+        <section class="case-section" data-section-num="03" data-reveal aria-labelledby="cs3-heading">
+          <div class="case-section-hd">
+            <span class="cs-num" aria-hidden="true">03</span>
+            <h2 id="cs3-heading">User Journey Maps</h2>
+          </div>
+
+          <h3>Sugam Pokhrel &mdash; Managing Inventory</h3>
+          <p style="color:var(--stone); font-size:0.88rem; margin-bottom:16px; font-style:italic;">
+            Note: The task of managing inventory is not difficult, but human errors make it challenging.
+          </p>
+          <div class="table-wrap" role="region" aria-label="Sugam Pokhrel user journey map" tabindex="0">
+            <table>
+              <caption class="visually-hidden">Sugam Pokhrel&rsquo;s journey managing restaurant inventory, showing feelings and improvement opportunities at each stage.</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Stage</th>
+                  <th scope="col">Look at inventory</th>
+                  <th scope="col">Make a list</th>
+                  <th scope="col">Order items</th>
+                  <th scope="col">Verify receipt</th>
+                  <th scope="col">Organize</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Feelings</th>
+                  <td>Confused, Bored</td>
+                  <td>Anticipation, Angry</td>
+                  <td>Confused, Relieved</td>
+                  <td>Agitation, Curious</td>
+                  <td>Disappointed, Optimistic</td>
+                </tr>
+                <tr>
+                  <th scope="row">Improvement</th>
+                  <td>Coordinate with employees</td>
+                  <td>Create list with all items</td>
+                  <td>Easy access to all items</td>
+                  <td>Organized activity</td>
+                  <td>Well-organized storage</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Sandra Smith &mdash; Managing Inventory Across 15 Restaurants</h3>
+          <p style="color:var(--stone); font-size:0.88rem; margin-bottom:16px; font-style:italic;">
+            Note: Communication &mdash; which is not always perfect &mdash; is key across all locations.
+          </p>
+          <div class="table-wrap" role="region" aria-label="Sandra Smith user journey map" tabindex="0">
+            <table>
+              <caption class="visually-hidden">Sandra Smith&rsquo;s journey managing inventory across 15 restaurants, showing feelings and opportunities at each stage.</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Stage</th>
+                  <th scope="col">List all restaurants</th>
+                  <th scope="col">Receive orders</th>
+                  <th scope="col">Prepare orders</th>
+                  <th scope="col">Send orders</th>
+                  <th scope="col">Confirm receipt</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Feelings</th>
+                  <td>Relaxed, Concentrated</td>
+                  <td>Annoyance, Anticipation</td>
+                  <td>Confusion, Overwhelmed</td>
+                  <td>Relaxed, Anxious</td>
+                  <td>Relieved, Satisfied</td>
+                </tr>
+                <tr>
+                  <th scope="row">Opportunities</th>
+                  <td>Have a pre-made list</td>
+                  <td>One channel for all orders</td>
+                  <td>Automated comparison with inventory</td>
+                  <td>Track shipment status</td>
+                  <td>Easy manager communication</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 04 Design Process -->
+        <section class="case-section" data-section-num="04" data-reveal aria-labelledby="cs4-heading">
+          <div class="case-section-hd">
+            <span class="cs-num" aria-hidden="true">04</span>
+            <h2 id="cs4-heading">Starting the Design</h2>
+          </div>
+          <ul>
+            <li>Paper wireframes &mdash; rapid ideation of core flows</li>
+            <li>Digital wireframes &mdash; structured layouts in Figma</li>
+            <li>Low-fidelity prototype &mdash; tested primary user flows</li>
+            <li>Usability study round 1 &mdash; moderated, in-person</li>
+          </ul>
+
+          <h3>Low-Fidelity Prototype</h3>
+          <div class="figma-link-box">
+            <span aria-hidden="true">Figma</span>
+            <a href="https://www.figma.com/file/gjekPUvQJFD5TIQycXBmu6/Portfolio-Project?type=design&node-id=0%3A1&mode=design&t=SwwTAlv5KW9AcvRy"
+               target="_blank" rel="noopener"
+               aria-label="View Inventory App low-fidelity prototype in Figma (opens in new tab)">
+              View Inventory App Lo-Fi Prototype &rarr;
+            </a>
+          </div>
+          <p><strong>User Flow:</strong> Users go to the homepage and scan an item to either
+          add to or subtract from the inventory.</p>
+
+          <h3>Usability Study Findings</h3>
+          <p>I conducted a moderated, in-person usability study for the low-fidelity prototype
+          and an unmoderated, in-person study for the high-fidelity prototype.</p>
+
+          <h3>Round 1 Findings</h3>
+          <ol>
+            <li>Users want a better user flow and a back button</li>
+            <li>Users want to easily scan items</li>
+            <li>Users want an organized area for items and their quantities</li>
+          </ol>
+
+          <h3>Round 2 Findings</h3>
+          <ol>
+            <li>Users want a tabulated item list</li>
+            <li>Users want easy access to items with icons and a back button</li>
+            <li>Users want more information on the home screen</li>
+          </ol>
+        </section>
+
+        <!-- 05 Refining the Design -->
+        <section class="case-section" data-section-num="05" data-reveal aria-labelledby="cs5-heading">
+          <div class="case-section-hd">
+            <span class="cs-num" aria-hidden="true">05</span>
+            <h2 id="cs5-heading">Refining the Design</h2>
+          </div>
+          <ul>
+            <li>Mockups &mdash; visual design applied to all screens</li>
+            <li>High-fidelity prototype &mdash; full interactions and transitions</li>
+            <li>Accessibility review &mdash; contrast, icons, alt text</li>
+          </ul>
+
+          <h3>Accessibility Considerations</h3>
+          <ol>
+            <li>Added icons and back buttons for easier navigation throughout the app</li>
+            <li>Used contrasting colors to support visually impaired users</li>
+            <li>Inserted item images for quick visual identification</li>
+          </ol>
+
+          <h3>High-Fidelity Prototype</h3>
+          <div class="figma-link-box">
+            <span aria-hidden="true">Figma</span>
+            <a href="https://www.figma.com/file/gjekPUvQJFD5TIQycXBmu6/Portfolio-Project?type=design&node-id=42%3A901&mode=design&t=1rYZWHuYmyXdbI53-1"
+               target="_blank" rel="noopener"
+               aria-label="View Inventory App high-fidelity prototype in Figma (opens in new tab)">
+              View Inventory App Hi-Fi Prototype &rarr;
+            </a>
+          </div>
+
+          <figure class="cs-image">
+            <img src="images/Homepage.jpg" alt="Inventory App high-fidelity homepage showing item categories, stock counts, and quick-add scanner button">
+            <figcaption>Inventory App Homepage &mdash; High-fidelity design in Figma</figcaption>
+          </figure>
+        </section>
+
+        <!-- 06 Going Forward -->
+        <section class="case-section" data-section-num="06" data-reveal aria-labelledby="cs6-heading">
+          <div class="case-section-hd">
+            <span class="cs-num" aria-hidden="true">06</span>
+            <h2 id="cs6-heading">Going Forward</h2>
+          </div>
+
+          <blockquote class="pull-quote">
+            <p>&ldquo;This will make my life a lot easier and save a lot of time.&rdquo;</p>
+          </blockquote>
+
+          <h3>What I Learned</h3>
+          <p>
+            I learned about the Gestalt principle while designing the inventory app.
+            I put myself in the users&rsquo; shoes most of the time to make the design more
+            interesting, interactive, and easy to use. Understanding how proximity,
+            similarity, and continuity guide attention helped me create layouts that
+            felt instinctive rather than learned.
+          </p>
+
+          <h3>Next Steps</h3>
+          <ol>
+            <li>Conduct another round of usability study focused on the scanner page &mdash; the core feature</li>
+            <li>Consult with a back-end developer to determine real-world technical requirements</li>
+            <li>Add more features and animations for richer visual feedback</li>
+            <li>Add alt text across all screens for assistive technology users</li>
+          </ol>
+        </section>
+
+      </div><!-- /.case-body -->
+
+    </main>
+
+    <footer class="site-footer">
+      <span class="footer-logo" aria-hidden="true">Garima Shrestha</span>
+      <p class="footer-copy"><small>&copy; 2026 Garima Shrestha. All rights reserved.</small></p>
+      <a href="portfolio.html" class="footer-link">Back to Portfolio</a>
+    </footer>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
