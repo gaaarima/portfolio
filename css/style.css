@@ -519,10 +519,13 @@ strong { font-weight: 500; }
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 16px;
-  list-style: none;
+  list-style: none !important;
+  list-style-type: none !important;
   padding: 0;
+  margin-left: 0;
 }
 
+.skills-tags li,
 .skill-tag {
   padding: 8px 15px;
   border: 1px solid var(--divider);
@@ -532,8 +535,17 @@ strong { font-weight: 500; }
   letter-spacing: 0.1em;
   color: var(--warm-gray);
   background: transparent;
-  list-style: none;
+  list-style: none !important;
+  list-style-type: none !important;
   transition: border-color 0.25s, color 0.25s, background 0.25s, transform 0.2s;
+}
+
+.skills-tags li::before,
+.skills-tags li::marker,
+.skill-tag::before,
+.skill-tag::marker {
+  display: none !important;
+  content: none !important;
 }
 .skill-tag:hover {
   border-color: var(--accent);
