@@ -532,6 +532,7 @@ strong { font-weight: 500; }
   letter-spacing: 0.1em;
   color: var(--warm-gray);
   background: transparent;
+  list-style: none;
   transition: border-color 0.25s, color 0.25s, background 0.25s, transform 0.2s;
 }
 .skill-tag:hover {
