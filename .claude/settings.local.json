@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(brew --version)",
+      "Bash(curl --version)",
+      "Read(//Users/garima/.ssh/**)",
+      "Bash(ssh -T git@github.com)",
+      "Bash(git config:*)"
+    ]
+  }
+}
